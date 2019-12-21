@@ -1,0 +1,28 @@
+/* 공용 헤더 디자인 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  margin-top: 32px;
+}
+.header .header__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header .header__column {
+  display: flex;
+  align-items: center;
+}
+.header .header__column .header__icon {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 채팅 파트 */
+.header .header__column .header__back-icon {
+  margin-right: 20px;
+  font-size: 24px;
+}
