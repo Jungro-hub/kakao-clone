@@ -1,0 +1,31 @@
+.main-settings__list {
+  border-bottom: 1px solid rgb(238, 238, 238);
+  border-top: 1px solid rgb(238, 238, 238);
+  padding: 10px 0;
+}
+.main-settings__setting {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3em;
+}
+.main-settings__setting > .setting__column {
+  cursor: pointer;
+}
+.setting__icon {
+  display: inline-block;
+  width: 50px;
+}
+.setting__icon i,
+.setting__title {
+  font-size: 20px;
+}
+.setting__sub {
+  opacity: 0.6;
+}
+.second-settings__list {
+  padding: 10px 0;
+}
+.third-settings__list {
+  border-top: 1px solid rgb(238, 238, 238);
+  padding: 10px 0;
+}

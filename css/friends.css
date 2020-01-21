@@ -1,0 +1,31 @@
+.friends__friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friends__header {
+  border-bottom: 1px solid #f7f7f7;
+}
+.friends__plus-friend {
+  padding: 20px 0;
+  border-bottom: 1px solid #f7f7f7;
+  margin: 20px 0;
+}
+.friends__title {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.friend__listening {
+  border: 3px solid #1cb648;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.listening__song {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.friend__listening i {
+  font-size: 12px;
+  margin-left: 5px;
+}
