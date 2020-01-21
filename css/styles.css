@@ -33,7 +33,31 @@ main {
   border-radius: 35%;
   margin-right: 15px;
 }
-
+.friend__group {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+}
+.friend__group > .g-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 35%;
+  position: absolute;
+  border: 3px solid white;
+}
+.friend__group > .g-avatar:first-child {
+  bottom: -5px;
+  left: -5px;
+}
+.friend__group > .g-avatar:nth-child(2) {
+  bottom: -5px;
+  right: -20px;
+}
+.friend__group > .g-avatar:nth-child(3) {
+  left: 7px;
+  top: -5px;
+}
 .friend--lg .g-avatar {
   width: 70px;
   height: 70px;
@@ -48,6 +72,10 @@ main {
   display: block;
   margin-bottom: 7px;
   font-weight: bold;
+}
+.friend__number {
+  opacity: 0.6;
+  padding-left: 10px;
 }
 
 .friend__status,
