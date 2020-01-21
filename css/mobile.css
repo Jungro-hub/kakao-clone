@@ -1,0 +1,18 @@
+@media (min-width: 550px) {
+  body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fce003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    content: "Please make your screen small!";
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+}

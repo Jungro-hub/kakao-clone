@@ -1,18 +1,93 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
-@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 @import "status-bar.css";
 @import "header.css";
-@import "nav-bar.css";
+@import "navigation-bar.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   color: #020202;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
 }
+
 a {
   color: inherit;
+  text-decoration: none;
+}
+main {
+  min-height: 80vh;
+}
+.g-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 35%;
+  margin-right: 15px;
+}
+
+.friend--lg .g-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__name {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.friend__status,
+.friend__bottom-text,
+.friend__time-stamp {
+  opacity: 0.6;
+}
+.friend__bottom-text {
+  font-size: 14px;
+}
+.friend__status,
+.friend__time-stamp {
+  font-size: 12px;
+}
+input:focus {
+  outline: none;
+}
+
+@keyframes fade-main {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+main {
+  animation: fade-main 1s ease forwards;
+}
+@keyframes show-nav {
+  from {
+    transform: translateY(61px);
+  }
+  to {
+    transform: none;
+  }
+}
+nav {
+  transform: translateY(61px);
+  animation: show-nav 0.5s ease 0.7s forwards;
 }
