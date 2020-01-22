@@ -35,4 +35,5 @@
   height: 15px;
   text-align: center;
   border-radius: 50%;
+  animation: flip 1s infinite;
 }
